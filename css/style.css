@@ -16,7 +16,7 @@ html {
   background-size: cover;
 }
 h1 {
-   font-size: 30px;
+   font-size: 26px;
    
    border: none; 
 border-width: 0; 
@@ -28,18 +28,12 @@ height: 100%;
 font-family: 'Comfortaa', cursive;
 }
 #clock {
-  font-weight: 300;
   font-size: 100px;
 }
 #wrapper {
-  
-
-  padding-right: 100px;
-  padding-left: 100px;
-
-  background: rgba(103, 120, 137,0.5)
-
-  /* ...  */
+  padding-right: 50px;
+  padding-left: 50px;
+  background: rgba(255, 163, 26,0.5)
 }
 #timer-beep {
   position: absolute;
@@ -71,7 +65,7 @@ text-align: center;
 height: 100%;
   display: block;
     float:left;
-	background-color: #8b8f96;
+	background-color: #ffd699;
 }
 
 button {
@@ -85,7 +79,7 @@ margin: 0;
     outline: none;
 	  display: block;
     float:left;
-	background-color: #aaacb7;
+	background-color: #ffc266;
 
 }
 
@@ -108,22 +102,22 @@ margin: 0;
   @-webkit-keyframes argh-my-eyes {
     0%   { background-color: transparent; }
     49% { background-color: transparent; }
-    50% { background-color: #FA5858; }
-    99% { background-color: #FA5858; }
+    50% { background-color: #ff3300; }
+    99% { background-color: #ff3300; }
     100% { background-color: transparent; }
   }
   @-moz-keyframes argh-my-eyes {
     0%   { background-color: transparent; }
     49% { background-color: transparent; }
-    50% { background-color: #FA5858; }
-    99% { background-color: #FA5858; }
+    50% { background-color: #ff3300; }
+    99% { background-color: #ff3300; }
     100% { background-color: transparent; }
   }
   @keyframes argh-my-eyes {
     0%   { background-color: transparent; }
     49% { background-color: transparent; }
-    50% { background-color: #FA5858; }
-    99% { background-color: #FA5858; }
+    50% { background-color: #ff3300; }
+    99% { background-color: #ff3300; }
     100% { background-color: transparent; }
   }
 
