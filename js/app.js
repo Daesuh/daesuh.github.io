@@ -2,30 +2,27 @@ var clock = document.getElementById('clock');
 /* var hexColor = document.getElementById('hex-color');
 document.body.style.backgroundColor = '#052433'; */
 
-function hexClock() {
-    var time = new Date();
-    var hours = (time.getHours() % 12).toString();
-    var minutes = time.getMinutes().toString();
-    var seconds = time.getSeconds().toString();
 
-    if (hours.length < 2) {
-        hours = '0' + hours;
-    }
-    if (minutes.length < 2) {
-        minutes = '0' + minutes;
-    }
-    if (seconds.length < 2) {
-        seconds = '0' + seconds;
-    }
-    var clockStr = hours + ' : ' + minutes + ' : ' + seconds;
-    //var hexColorStr = '#' + hours + minutes + seconds;
-    clock.textContent = clockStr;
-    //hexColor.textContent = hexColorStr;
-    //document.body.style.backgroundColor = hexColorStr;
+
+
+
+function formatAMPM() {
+	var timo = new Date();
+  var hours = timo.getHours();
+  var minutes = timo.getMinutes();
+  var ampm = hours >= 12 ? 'pm' : 'am';
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? '0'+minutes : minutes;
+  var strTime = hours + ':' + minutes + ' ' + ampm;
+  clock.textContent = strTime;
+  return strTime;
 }
 
-hexClock();
-setInterval(hexClock, 1000);
+
+function formatAMPM();
+//hexClock();
+//setInterval(hexClock, 1000);
 
 function myFunctionDel() {
     var x = document.getElementById("selectobjetos");
