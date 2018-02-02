@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>BDO Timer</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body onload="storagecargar();">
@@ -18,12 +19,12 @@
       <script src="js/app.js"></script>
       <div id="middlecolumn">
         <div id="divlista">
-        <h1>Minutes</h1>
+        <h1>Minutos </h1>
         <input id="minutos" type="text" value="..." style="width:200px" onblur="if (this.value == '') {this.value = '...';}"
  onfocus="if (this.value == '...') {this.value = '';}"/>
         <br />
         <br />
-        <h1>Notifications</h1>
+        <h1>Objetos</h1>
         <input id="listaid" type="text" value="..." style="width:60%" onblur="if (this.value == '') {this.value = '...';}"
  onfocus="if (this.value == '...') {this.value = '';}"/> 
         <button type="button" onclick="myFunctionAdd()" style="width:20%">+</button> 
@@ -33,7 +34,7 @@
         <select multiple='multiple' id='selectobjetos' style="width:200px" size="1">
 		</select>
         <br />
-        <button onclick="addrow()">Start</button></div>
+        <button onclick="addrow()">&nbsp;Go!&nbsp;</button></div>
       </div>
       <div id="rightcolumn">
         <br />

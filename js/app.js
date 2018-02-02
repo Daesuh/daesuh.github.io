@@ -1,28 +1,20 @@
 var clock = document.getElementById('clock');
-/* var hexColor = document.getElementById('hex-color');
-document.body.style.backgroundColor = '#052433'; */
-
-
-
-
 
 function formatAMPM() {
 	var timo = new Date();
   var hours = timo.getHours();
   var minutes = timo.getMinutes();
+  var seconds = timo.getSeconds();
   var ampm = hours >= 12 ? 'pm' : 'am';
   hours = hours % 12;
   hours = hours ? hours : 12; // the hour '0' should be '12'
   minutes = minutes < 10 ? '0'+minutes : minutes;
-  var strTime = hours + ':' + minutes + ' ' + ampm;
+  var strTime = hours + ':' + minutes + ':' + seconds /* +''+ ampm */;
   clock.textContent = strTime;
   return strTime;
 }
 
-
-function formatAMPM();
-//hexClock();
-//setInterval(hexClock, 1000);
+setInterval(formatAMPM, 1000);
 
 function myFunctionDel() {
     var x = document.getElementById("selectobjetos");
