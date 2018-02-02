@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body onload="storagecargar();">
+  <video playsinline autoplay muted loop poster="https://thumbs.gfycat.com/FelineGlisteningBarracuda-mobile.jpg" id="bgvid">
+    <source src="https://giant.gfycat.com/FelineGlisteningBarracuda.webm" type="video/webm">
+    <source src="https://giant.gfycat.com/FelineGlisteningBarracuda.mp4" type="video/mp4">
+</video>
+<div id="clock"></div>
+    <div id="wrapper" > 
+      <br />
+      <script src="js/app.js"></script>
+      <div id="middlecolumn">
+        <div id="divlista">
+        <h1>Minutes</h1>
+        <input id="minutos" type="text" value="..." style="width:200px" onblur="if (this.value == '') {this.value = '...';}"
+ onfocus="if (this.value == '...') {this.value = '';}"/>
+        <br />
+        <br />
+        <h1>Notifications</h1>
+        <input id="listaid" type="text" value="..." style="width:60%" onblur="if (this.value == '') {this.value = '...';}"
+ onfocus="if (this.value == '...') {this.value = '';}"/> 
+        <button type="button" onclick="myFunctionAdd()" style="width:20%">+</button> 
+        <button type="button" onclick="myFunctionDel()" style="width:20%">-</button>
+        <br />
+
+        <select multiple='multiple' id='selectobjetos' style="width:200px" size="1">
+		</select>
+        <br />
+        <button onclick="addrow()">Add Alarm</button></div>
+      </div>
+      <div id="rightcolumn">
+        <br />
+        <table id="tabletimers" align="left"></table>
+      </div>
+	  
+	  <br />
+	  <br />
+      <!-- <iframe src="https://i.imgur.com/4uSv2kw.gifv" width="720" height="1308" scrolling="no" style="border:none;"></iframe> -->
+    </div>
+	<!-- <button onclick="debug()">DEBUG</button></div> -->
+  </body>
+</html>

@@ -1,0 +1,157 @@
+/* This file should be in a folder called `css` */
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
+
+*{
+   font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+body {
+  margin-top: 200px;
+ 
+  color: white;
+}
+html { 
+
+  /* background:  url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif) no-repeat center center fixed;  */
+  background:  url(https://gfycat.com/ifr/FelineGlisteningBarracuda) no-repeat center center fixed;
+  background-size: cover;
+}
+h1 {
+   font-size: 35px;
+   
+   border: none; 
+border-width: 0; 
+box-shadow: none;
+padding: 0;
+margin: 0;
+text-align: center;
+height: 100%;
+font-family: 'Nunito', sans-serif;
+}
+#clock {
+  font-weight: 300;
+  font-size: 100px;
+}
+#wrapper {
+  
+
+  padding-right: 100px;
+  padding-left: 100px;
+
+  background: rgba(103, 120, 137,0.5)
+
+  /* ...  */
+}
+#timer-beep {
+  position: absolute;
+  top: -100000em;
+}
+
+#middlecolumn {
+	width: 250px;
+display: inline-block; vertical-align: top;
+text-align: right;
+}
+#rightcolumn {
+	width: 49%;
+display: inline-block; vertical-align: top;
+text-align: left;
+}
+#divlista {
+max-width: 200px;
+
+}
+
+input {
+border: none; 
+border-width: 0; 
+box-shadow: none;
+padding: 0;
+margin: 0;
+text-align: center;
+height: 100%;
+  display: block;
+    float:left;
+	background-color: #91abd6;
+}
+
+button {
+border: none; 
+border-width: 0; 
+box-shadow: none;
+padding: 0;
+text-align: center;
+margin: 0;
+    height: 100%;
+    outline: none;
+	  display: block;
+    float:left;
+	background-color: #91abd6;
+
+}
+
+select{
+border: none; 
+border-width: 0; 
+box-shadow: none;
+padding: 0;
+text-align: center;
+margin: 0;
+
+    height: 100%;
+    outline: none;
+	  display: block;
+    float:left;
+
+        line-height:30px;
+}
+
+  @-webkit-keyframes argh-my-eyes {
+    0%   { background-color: transparent; }
+    49% { background-color: transparent; }
+    50% { background-color: #FA5858; }
+    99% { background-color: #FA5858; }
+    100% { background-color: transparent; }
+  }
+  @-moz-keyframes argh-my-eyes {
+    0%   { background-color: transparent; }
+    49% { background-color: transparent; }
+    50% { background-color: #FA5858; }
+    99% { background-color: #FA5858; }
+    100% { background-color: transparent; }
+  }
+  @keyframes argh-my-eyes {
+    0%   { background-color: transparent; }
+    49% { background-color: transparent; }
+    50% { background-color: #FA5858; }
+    99% { background-color: #FA5858; }
+    100% { background-color: transparent; }
+  }
+
+#blink {
+  -webkit-animation: argh-my-eyes 1s infinite;
+  -moz-animation:    argh-my-eyes 1s infinite;
+  animation:         argh-my-eyes 1s infinite;
+}
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+}
+
