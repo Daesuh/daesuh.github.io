@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 * {
   font-family: 'Comfortaa', cursive;
-  font-size: 18px;
+  font-size: 20px;
+  text-align:left;
 }
 
 body {
@@ -13,7 +14,6 @@ body {
 }
 
 html {
-  /* background:  url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif) no-repeat center center fixed;  */
   background: url(https://gfycat.com/ifr/FelineGlisteningBarracuda) no-repeat center center fixed;
   background-size: cover;
 }
@@ -25,7 +25,6 @@ h1 {
   box-shadow: none;
   padding: 0;
   margin: 0;
-  text-align:left;
   height: 100%;
   font-family: 'Comfortaa', cursive;
 }
@@ -38,40 +37,34 @@ h2 {
   margin: 0;
   height: 100%;
   font-family: 'Comfortaa', cursive;
-  text-align: left;
 }
+
 
 #clock {
   font-size: 100px;
 }
 
 #wrapper {
-  padding-right: 50px;
-  padding-left: 50px;
   background: rgba(255, 163, 26, 0.5)
 }
 
-#timer-beep {
-  position: absolute;
-  top: -100000em;
-}
-
 #leftcol {
-  width: 250px;
   display: inline-block;
   vertical-align: top;
-  text-align: right;
-}
-
-#righttcol {
-  width: 49%;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-}
-
-#divlista {
   max-width: 200px;
+  padding: 20px;
+  padding-left: 30px;
+}
+
+#bottomDiv {
+  padding-bottom: 40px;
+  padding-left: 30px;
+}
+
+#rightcol {
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
 }
 
 input {
@@ -87,7 +80,7 @@ input {
   background-color: #ffd699;
 }
 
-button {
+.button1 {
   border: none;
   border-width: 0;
   box-shadow: none;
@@ -100,6 +93,33 @@ button {
   float: left;
   background-color: #ffc266;
 }
+.button2 {
+  border: none;
+  border-width: 0;
+  box-shadow: none;
+  padding-left: : 5px;
+  padding-right: 5px;
+  text-align: center;
+  margin: 0;
+  height: 100%;
+  outline: none;
+  display: block;
+  float: left;
+  background-color: #ffc266;
+}
+.button3 {
+  border: none;
+  border-width: 0;
+  box-shadow: none;
+  padding-left: : 15px;
+  padding-right: 15px;
+  text-align: center;
+  margin: 0;
+  height: 100%;
+  outline: none;
+  background-color: #ffc266;
+}
+
 
 select {
   border: none;
@@ -111,7 +131,7 @@ select {
   height: 100%;
   outline: none;
   display: block;
-  float: left;
+
   line-height: 30px;
 }
 
@@ -175,7 +195,7 @@ select {
   animation: argh-my-eyes 1s infinite;
 }
 
-video#bgvid {
+video#bgvideo {
   position: fixed;
   top: 50%;
   left: 50%;
