@@ -124,8 +124,7 @@ function storageSave() {
 }
 var sounds = ["https://freesound.org/data/previews/186/186724_43-lq.mp3", "http://freesound.org/data/previews/417/417082_4397472-lq.mp3",
     "http://freesound.org/data/previews/417/417156_757812-lq.mp3", "http://freesound.org/data/previews/7/7056_10379-lq.mp3",
-    "http://freesound.org/data/previews/316/316920_4921277-lq.mp3", "http://freesound.org/data/previews/417/417048_757812-lq.mp3",
-    "http://freesound.org/data/previews/14/14262_31076-lq.mp3"
+    "http://freesound.org/data/previews/316/316920_4921277-lq.mp3"
 ];
 sounds.current = 0;
 
