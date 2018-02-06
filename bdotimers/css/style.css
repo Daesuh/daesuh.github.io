@@ -230,18 +230,26 @@ video#bgvideo {
   h2 {
 font-size: 7vw;
   }
+  #wrapper{
+    background: rgba(255, 163, 26, 0.3)
+
+  }
   body {
     margin-top: 20px;
     color: white;
-    background-color:#1a8cff;
+    background: rgba(255, 163, 26, 0.2);
   }
   * {
     font-family: 'Comfortaa', cursive;
-    font-size: 22px;
+    font-size: 6vw;
     text-align:left;
   }
   html {
-    background: url(https://gfycat.com/ifr/FelineGlisteningBarracuda) no-repeat center center fixed;
+    background: rgba(38, 38, 38, 1);
+    /* background: url("https://i.imgur.com/OtQbPDF.png");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed; */
   }
 }
