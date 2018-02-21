@@ -6,12 +6,12 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
         <title>BDO Notice Timers</title>
         <link rel="stylesheet" href="css/style.css"/>
-        <link rel="icon" type="image/png" href="https://d30y9cdsu7xlg0.cloudfront.net/png/11543-200.png">
+        <link rel="icon" type="image/png" href="./media/fav.png">
     </head>
     <body onload="storageLoad();">
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="https://thumbs.gfycat.com/FelineGlisteningBarracuda-mobile.jpg" id="bgvideo">
-            <source src="https://giant.gfycat.com/FelineGlisteningBarracuda.webm" type="video/webm">
-            <source src="https://giant.gfycat.com/FelineGlisteningBarracuda.mp4" type="video/mp4">
+            <!-- <source src="https://giant.gfycat.com/FelineGlisteningBarracuda.webm" type="video/webm"> -->
+            <source src="./media/bg.mp4" type="video/mp4">
         </video>
         <h2>BDO Notice Timers</h2>
         <div id="clock"></div>
@@ -19,7 +19,7 @@
             <script src="js/app.js"></script>
             <div id="leftcol">
                 <h1>Minutes</h1>
-                <input id="minutos" type="text" value="..." style="width:100%" onblur="if (this.value == '') {this.value = '...';}" onfocus="if (this.value == '...') {this.value = '';}"/>
+                <input id="minutos" autocomplete='off' type="text" value="..." style="width:100%" onblur="if (this.value == '') {this.value = '...';} else{ storageSave(); }" onfocus="this.value = '';this.style.color='';"/>
                 <h1 >Alarm</h1>
                 <button id="numSong" class="button2" style="width:40%">1</button>
                 <button id="playButton" class="button2" style="width:30%" onclick="buttonPlay()">Play</button>
@@ -27,8 +27,9 @@
                 <h1>Items</h1>
                 <input id="itemInput" type="text" value="..." style="width:80%" onblur="if (this.value == '') {this.value = '...';}" onfocus="if (this.value == '...') {this.value = '';}"/>
                 <button class="button1" onclick="deleteItem()" style="width:20%">-</button>
-                <select multiple='multiple' id='itemTable' style="width:100%" size="3">
-                </select>
+                <div class="selectBlock">
+                    <select multiple='multiple' id='itemTable' style="width:100%" size="3"></select>
+                </div>
                 <button class="button2" onclick="addTimer()">Go!</button>
             </div>
             <div id="rightcol">

@@ -87,18 +87,8 @@ button{
     padding-right: 5px;
 }
 
-select {
-    border: none;
-    border-width: 0;
-    box-shadow: none;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-    height: 100%;
-    outline: none;
-    display: block;
-    line-height: 30px;
-}
+select { padding:5px;border: none; }
+
 
 @-webkit-keyframes argh-my-eyes {
     0% {

@@ -83,9 +83,11 @@ function startTimer(segundos, display) {
 }
 
 function timerGo(minutes) {
+
     var segundos = 60 * minutes,
         display = document.querySelector('#timer');
     startTimer(segundos, display);
+
 };
 
 function deleteTimer(o) {
@@ -95,8 +97,9 @@ function deleteTimer(o) {
     audioPause();
 }
 
-function addTimer(timer) {
-    var minutes = document.getElementById("minutos").value;
+function addTimer() {
+  var minutes = Number(document.getElementById("minutos").value);
+    if(!isNaN(minutes)){
     var itemTable = document.getElementById("itemTable");
     var selectedItem = itemTable.options[itemTable.selectedIndex].text;
     var table = document.getElementById("tableTimers");
@@ -104,6 +107,10 @@ function addTimer(timer) {
     var cell1 = row.insertCell(0);
     cell1.innerHTML = '<button class="button2" onclick="deleteTimer(this)" />Stop</button>' + '&nbsp&nbsp&nbsp' + '<span id="timer" class="go"></span>' + '&nbsp&nbsp&nbsp' + selectedItem;
     timerGo(minutes);
+  }else{
+    document.getElementById("minutos").value="invalid number";
+    document.getElementById("minutos").style.color = "red";
+  }
 }
 
 function storageSave() {
@@ -156,7 +163,21 @@ function storageLoad() {
                     }
                 }
             } else {}
-        } else {}
+        } else {
+          if(j==null & z==null){
+            var selec = document.getElementById("itemTable");
+                var option = document.createElement("option");
+                option.text = "Kutum Shield";
+                selec.add(option);
+                option = document.createElement("option");
+                option.text = "Urugon's Shoes";
+                selec.add(option);
+                option = document.createElement("option");
+                option.text = "Dandelion GS";
+                selec.add(option);
+                itemTableSize();
+          }
+        }
     } else {
         document.getElementById("itemTable")[0].innerHTML = "local storage error...";
     }
